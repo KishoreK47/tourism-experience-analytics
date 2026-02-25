@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Load Models and Data
 # -----------------------------
 
-regression_model = joblib.load("Models\regression_model.pkl")
+regression_model = joblib.load(r"Models\regression_model.pkl")
 classification_model = joblib.load("Models\classification_model.pkl")
 
 encoders = joblib.load("Models\encoders.pkl")
