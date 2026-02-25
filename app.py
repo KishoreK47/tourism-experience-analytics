@@ -11,14 +11,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 regression_model = joblib.load("Models/regression_model.pkl")
 classification_model = joblib.load("Models/classification_model.pkl")
 
-encoders = joblib.load("Models\encoders.pkl")
+encoders = joblib.load("Models/encoders.pkl")
 
-user_item_matrix = joblib.load(r"Recomendations\user_item_matrix.pkl")
-item_similarity_df = joblib.load(r"Recomendations\item_similarity.pkl")
-content_similarity_df = joblib.load(r"Recomendations\content_similarity.pkl")
-attraction_lookup = joblib.load(r"Recomendations\attraction_lookup.pkl")
+user_item_matrix = joblib.load("Recomendations/user_item_matrix.pkl")
+item_similarity_df = joblib.load("Recomendations/item_similarity.pkl")
+content_similarity_df = joblib.load("Recomendations/content_similarity.pkl")
+attraction_lookup = joblib.load("Recomendations/attraction_lookup.pkl")
 
-master = pd.read_csv(r"Data\master_tourism_dataset.csv")
+master = pd.read_csv("Data/master_tourism_dataset.csv")
 
 
 # -----------------------------
