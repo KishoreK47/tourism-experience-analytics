@@ -8,10 +8,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Load Models and Data
 # -----------------------------
 
-regression_model = joblib.load(r"Models\regression_model.pkl")
-classification_model = joblib.load(r"Models\classification_model.pkl")
+regression_model = joblib.load("Models\regression_model.pkl")
+classification_model = joblib.load("Models\classification_model.pkl")
 
-encoders = joblib.load(r"Models\encoders.pkl")
+encoders = joblib.load("Models\encoders.pkl")
 
 user_item_matrix = joblib.load(r"Recomendations\user_item_matrix.pkl")
 item_similarity_df = joblib.load(r"Recomendations\item_similarity.pkl")
